@@ -52,3 +52,17 @@ Shirone is a blog theme built with Astro 7, Svelte 5, Tailwind 4, Stylus, and pn
 - Motion primitives live in `src/utils/motion.ts` (`fadeOutThenHide`, `flipFromRect`, `revealIn`, `collapse`); `prefersReducedMotion()` must be honored.
 - Atom inventory and count are authoritative only in `src/components/atoms/manifest.json`; do not maintain a second hard-coded count in instructions or prose.
 - Canonical page templates are under `src/layouts/`; `src/components/layout/` is not a parallel template layer.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in the GitHub repo as GitHub Issues (managed via the `gh` CLI). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Five canonical labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one root `CONTEXT.md` plus `docs/adr/`. See `docs/agents/domain.md`.
